@@ -26,13 +26,13 @@ apt-get install python3-dev xsltproc zlib1g-dev liblmdb-dev lmdb-utils
 cd /usr/src
 wget https://download.samba.org/pub/samba/stable/samba-4.11.6.tar.gz
 tar -xzvf samba-4.11.6.tar.gz
-cd samba-4.6.11
+cd samba-4.11.6
 ./configure
 make
 make install
 
 
-echo [Unit]
+echo '[Unit]
 Description=Samba4 AD Daemon
 After=syslog.target network.target
 

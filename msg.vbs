@@ -1,0 +1,1 @@
+MsgBox ("ATENÇÃO: Pedimos que ao desligar seu computador corretamente'." & vbcrlf & "Somente assim seu computador ficará seguro." & vbcrlf & "Agradecemos pela compreensão," & vbcrlf & "Atenciosamente," & vbcrlf & "Equipe de TI")

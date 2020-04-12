@@ -1,5 +1,5 @@
 #!/bin/bash
-## Install Samba4 4.11.6
+## Install Samba4 4.12.1
 ## On Debian
 ## Author: Marcio Inumaru
 ## Version: 0.5
@@ -24,9 +24,9 @@ apt-get install python3-dev xsltproc zlib1g-dev liblmdb-dev lmdb-utils
 
 
 cd /usr/src
-wget https://download.samba.org/pub/samba/stable/samba-4.11.6.tar.gz
-tar -xzvf samba-4.11.6.tar.gz
-cd samba-4.11.6
+wget https://download.samba.org/pub/samba/stable/samba-4.12.1.tar.gz
+tar -xzvf samba-4.12.1.tar.gz
+cd samba-4.12.1
 ./configure
 make
 make install

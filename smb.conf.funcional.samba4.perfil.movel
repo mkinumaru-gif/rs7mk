@@ -1,0 +1,62 @@
+# Global parameters
+[global]
+	dns forwarder = 172.16.0.1
+	netbios name = DEBIAN-SERVER
+	realm = CISCO.LAN.LOCAL
+	server role = active directory domain controller
+	workgroup = CISCO.LAN
+
+[profiles]
+	path = /home/profiles
+	read only = No
+	force create mode = 0600
+	force directory mode = 0700
+	vfs objects = acl_xattr
+#	writable = Yes
+	write list = @users
+#	browseable = No
+
+[sysvol]
+	path = /home/sysvol
+	read only = No
+	browseable = No
+
+[netlogon]
+	path = /home/netlogon
+	read only = Yes
+	browseable = No
+
+[informatica]
+	path = /home/informatica
+	read only = No
+	browseable = No
+	write list = @informatica
+
+[public]
+	path = /home/public
+	read only = No
+	write list = @users
+
+[comercial]
+	path = /home/comercial
+	read only = No
+	browseable = Yes
+	write list = @comercial
+
+[administracao]
+	path = /home/administracao
+	read only = No
+	browseable = No
+	write list = @administracao
+
+[vendas]
+	path = /home/vendas
+	read only = No
+	browseable = No
+	write list = @vendas
+
+[nqbt]
+	path = home/nqbt
+	read only = No
+	browseable = No
+	write list = @nqbt
